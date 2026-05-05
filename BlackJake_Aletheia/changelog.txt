@@ -1,0 +1,22 @@
+# Version 0.8.0.1 # : 28/07/2025
+    - first playable build
+
+# Version 0.8.1.1 # : 30/07/2025
+    == Bug fixes ==
+        - fixed bug displaying a localization key error when player got a natural black jack
+        - fixed miss-calculated profits when winning a game
+    
+    == Miscelaneous ==
+        - added a condition for when player has too much cash after winning a game (cash + earnings exceeding 1M) so the overflowing money is transfered to the balance instead of vanishing from reality
+        - project files are now structured and organized and the changelog.txt file will now appear in the game folder
+
+# Version 0.9.0.1 # : ??/??/2025
+    == New features ==
+        - The Bank has been added to the game!
+            * via the bank menu, you can now Deposit and Withdraw cash between rounds
+            * via the bank menu, you can now Take out a Loan at leisure, reinforcing your gambling addiction in exchange for a small percentage of your balance money after each round!
+            * you can also choose to repay the loan by the amount you want between rounds
+            * be careful; if you don't have enough cash to repay the loan, it's game over!
+    == Changes ==
+        - any amount of money in an input that exceeds the maximum available value will now be considered the maximum amount of money to be returned (i.e.: Cash = 100, Bet = 0 | bet 999 -> Cash = 0, Bet = 100)
+        - the command system has been reworked and now accepts multiple arguments in a single line (i.e, you can now do "bet 100 play" while before you had to do "bet 100" and then "play")
